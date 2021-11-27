@@ -236,3 +236,11 @@
 .container:hover .overlay {
     opacity: 1;
 }
+
+@media only screen and (max-width: 768px){
+    .main-image img {
+        width: 60%;
+        height: 500px;
+        padding: 30px 0 20px 0;
+    }
+}
