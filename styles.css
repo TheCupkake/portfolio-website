@@ -11,7 +11,8 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 40%;
+    width: 30%;
+    height: 400px;
     position: relative;
     animation: jumpin;
     animation-duration: 3s;
@@ -20,10 +21,10 @@
 
 
 .main-image div h1 {
-    padding: 30px 0;
+    padding: 30px 0 0 0;
     color: white;
     text-align: center;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Comforter', cursive;
     position: relative;
     animation: jumpdown;
     animation-duration: 1s;
@@ -31,28 +32,31 @@
     animation-fill-mode: backwards;
 }
 
+.main-image div h2 {
+    padding: 10px 0 30px 0;
+    color: white;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    position: relative;
+    animation: jumpdown;
+    animation-duration: 1s;
+    animation-delay: 3s;
+    animation-fill-mode: backwards;
+}
+
 /*The navigation bar*/
 
-.topnav {
-    position: relative;
+.navbar {
     background: rgb(0,0,0);
-    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(29,29,29,1) 94%, rgba(0,0,0,1) 100%);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(28,28,28,1) 100%);
     margin: 0px;
     overflow: hidden;
-    height: 140px;
+    height: 80px;
     padding: 0px;
     display: flex;
     flex-wrap: wrap;
 }
 
-
-
-.topnav img {
-    height: 130px;
-    width: 130px;
-    border-radius: 50%;
-    padding-right: 20px;
-}
 
 .nav-item{
     text-decoration: none;
@@ -61,15 +65,85 @@
     font-size: 25px;
     color: white;
     font-family: 'Permanent Marker', cursive;
-    height: 40px;
+    height: 80px;
 }
 
 .nav-item:hover{
-    background-color: #a6a6a6;
+    background-color: #6c6c6c;
     color: black;
     animation: shake 0.5s;
     animation-iteration-count: infinite;
 }
+
+.nav-item:active{
+    background-color: #79ffac;
+    color: black;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky2 {
+    position: fixed;
+    top: 80px;
+    width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+.progress-container {
+  width: 100%;
+  height: 6px;
+  background: #6c6c6c;
+}
+
+.progress-bar {
+  height: 6px;
+  background: #79ffac;
+  width: 0%;
+}
+
+
+
+
+.content{
+    height: 2000px;
+}
+
+.column{
+    width: 50%;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 100px;
+}
+
+.row:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+
+.circle {
+    background-color: #79ffac;
+    color: black;
+    border-radius: 50%;
+    display: inline-block;
+    height: 200px;
+    width: 200px;
+    padding: 50px;
+}
+
+
+
 
 .social-media-container{
     margin: 10px;
