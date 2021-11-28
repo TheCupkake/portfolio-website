@@ -237,10 +237,14 @@
     opacity: 1;
 }
 
-@media only screen and (max-width: 768px){
+@media (max-width: 600px){
     .main-image img {
         width: 60%;
-        height: 500px;
-        padding: 30px 0 20px 0;
+        height: 250px;
+        margin: 150px auto 50px auto;
+    }
+
+    h2{
+        margin-bottom: 50px;
     }
 }
