@@ -262,6 +262,7 @@ span{
         height: 250px;
         margin: 150px auto 50px auto;
         color: red;
+        .column {width: 100%;}
     }
 
     h2{
