@@ -35,17 +35,25 @@ const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
         const bar = entry.target.querySelector('.bar');
         const text = entry.target.querySelector('.skills-h2');
+        const logosLeft = document.querySelector('#logos-left');
+        const logosRight = document.querySelector('#logos-right');
+        
         if (entry.isIntersecting) {
             bar.classList.add('bar-animation');
-            text.classList.add('skills-h2-animation')
+            text.classList.add('skills-h2-animation');
+            logosLeft.classList.add('logos-left-animation');
+            logosRight.classList.add('logos-right-animation');
             return; // if we added the class, exit the function
         }
 
         // We're not intersecting, so remove the class!
         bar.classList.remove('bar-animation');
         text.classList.remove('skills-h2-animation');
+        logosLeft.classList.remove('logos-left-animation');
+        logosRight.classList.remove('logos-right-animation');
     });
 });
 
 observer.observe(document.querySelector('.skills-container'));
+
 
