@@ -135,7 +135,6 @@
 .bar {
     background: #79ffac;
     height: 6px;
-    width: 100%;
     margin-bottom: 100px;
 }
 
@@ -251,7 +250,7 @@ span{
     }
 
     100%{
-        transform: translateX(90%);
+        transform: translateX(70%);
         opacity:1;
     }
 }
@@ -262,7 +261,6 @@ span{
         height: 250px;
         margin: 150px auto 50px auto;
         color: red;
-        .column {width: 100%;}
     }
 
     h2{
